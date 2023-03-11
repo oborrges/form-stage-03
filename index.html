@@ -25,7 +25,7 @@
       <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
     </header>
     
-    <form action="GET" id="my-form">
+    <form id="my-form">
 
       <fieldset>
         <legend>Informações pessoais</legend>
@@ -38,7 +38,7 @@
   
           <div class="input-wrapper">
             <label for="surname">Sobrenome</label>
-            <input id="surname" type="text" required>
+            <input id="surname" type="text" autocomplete="off" required>
           </div>  
         </div>
 
@@ -57,7 +57,7 @@
         <legend>Informações do mentor</legend>
         <div class="input-wrapper">
           <label for="mentor-name">Nome do seu mentor <span>(só o primeiro nome)</span></label>
-          <input id="mentor-name" type="text" required>
+          <input id="mentor-name" type="text" autocomplete="off" required>
         </div>  
       </fieldset>
 
@@ -109,7 +109,7 @@
     </form>
 
     <footer>
-      <button type="submit" id="my-form">Salvar</button>
+      <button type="submit" form="my-form">Salvar</button>
     </footer>
   </div>
 </body>
